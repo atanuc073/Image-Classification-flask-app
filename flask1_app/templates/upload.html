@@ -1,0 +1,39 @@
+{% extends 'index.html' %}
+
+{% block body %}
+    <div class="container" id="myrow">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a href="nav-link active" id="uploadimg" href="#upload-image">Upload Image</a>
+
+            </li>
+
+        </ul>
+        <!-- tab panes -->
+        <div class="tab-content">
+            <div class="tab-pane active" id="upload-image" role="tabpanel" aria-labelledby="uploadimg">
+                <div class="row">
+                    <div class="col">
+                        <form action="#" method="POST" enctype="multipart/form-data">
+                            <p>
+                                <input type="file" name="image_name" class="btn" style="background-color: #2471A3;color: azure;">
+                            </p>
+                            <p align="center"><strong>Instructions :</strong><br>
+                                Only upload the file with extention ".png",".jpg",".jpeg"
+                            </p>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        
+    </div>
+
+
+{% endblock  %}
+
