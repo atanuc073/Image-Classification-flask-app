@@ -56,12 +56,22 @@
             </div>
             <div>
                 <div class="col col-4">
-                    <img src="/static/upload/{{image_filename}}" alt="">
+                    <img src="/static/upload/{{image_filename}}" alt="" width="300" height="{{ height}}">
                 </div>
             </div>
         </div>
     </div>
 
+    {% endif %}
+    {% if extension %}
+        <div class="container" id="myrow_result">
+            <div class="row">
+                <p>Invalid Extension Of the Image</p>
+                <p>Make Sure the extension is of following : ".png",".jpg",",jpeg"</p>
+            </div>
+
+        </div>
+    
     {% endif %}
 
     <style>
@@ -76,6 +86,10 @@
         table{
             width: 100%;
             border-collapse: collapse;
+        }
+
+        table,th,tr{
+            border: 1px solid black;
         }
 
     </style>
